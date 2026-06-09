@@ -1,0 +1,98 @@
+{
+  "name": "whereami",
+  "displayName": "Copy Path:Line",
+  "description": "Copies file path + line number to clipboard. Relative or absolute. Handy for pointing AI agents or teammates at specific lines.",
+  "version": "0.1.0",
+  "publisher": "isimisi",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isimisi/vscode-copy-path-line"
+  },
+  "bugs": {
+    "url": "https://github.com/isimisi/vscode-copy-path-line/issues"
+  },
+  "homepage": "https://github.com/isimisi/vscode-copy-path-line#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "copy",
+    "path",
+    "line number",
+    "clipboard",
+    "reference",
+    "ai",
+    "context",
+    "file path"
+  ],
+  "galleryBanner": {
+    "color": "#1E1E2E",
+    "theme": "dark"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copy-path-line.copyRelative",
+        "title": "Copy Relative Path:Line"
+      },
+      {
+        "command": "copy-path-line.copyAbsolute",
+        "title": "Copy Full Path:Line"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "copy-path-line.submenu",
+        "label": "Copy Path:Line"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "copy-path-line.submenu",
+          "group": "9_cutcopypaste"
+        }
+      ],
+      "copy-path-line.submenu": [
+        {
+          "command": "copy-path-line.copyRelative"
+        },
+        {
+          "command": "copy-path-line.copyAbsolute"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "copy-path-line.copyRelative",
+        "key": "ctrl+shift+l",
+        "mac": "cmd+shift+l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "copy-path-line.copyAbsolute",
+        "key": "ctrl+alt+shift+l",
+        "mac": "cmd+alt+shift+l",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

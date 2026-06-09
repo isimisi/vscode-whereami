@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <rect width="256" height="256" rx="24" fill="#1E1E2E"/>
+  <rect x="16" y="16" width="224" height="224" rx="16" fill="#282840"/>
+
+  <!-- File icon body -->
+  <path d="M72 48h72l40 40v120c0 8.8-7.2 16-16 16H72c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16z" fill="#3B3B5C" stroke="#6C6CA0" stroke-width="2"/>
+  <!-- File fold -->
+  <path d="M144 48v40h40" fill="#3B3B5C" stroke="#6C6CA0" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Line number indicators -->
+  <rect x="68" y="108" width="16" height="4" rx="2" fill="#6C6CA0" opacity="0.5"/>
+  <rect x="68" y="120" width="16" height="4" rx="2" fill="#A0A0FF"/>
+  <rect x="68" y="132" width="16" height="4" rx="2" fill="#A0A0FF"/>
+  <rect x="68" y="144" width="16" height="4" rx="2" fill="#A0A0FF"/>
+  <rect x="68" y="156" width="16" height="4" rx="2" fill="#6C6CA0" opacity="0.5"/>
+  <rect x="68" y="168" width="16" height="4" rx="2" fill="#6C6CA0" opacity="0.5"/>
+
+  <!-- Code lines -->
+  <rect x="92" y="108" width="60" height="4" rx="2" fill="#6C6CA0" opacity="0.4"/>
+  <rect x="92" y="120" width="72" height="4" rx="2" fill="#CDD6F4"/>
+  <rect x="92" y="132" width="56" height="4" rx="2" fill="#CDD6F4"/>
+  <rect x="92" y="144" width="64" height="4" rx="2" fill="#CDD6F4"/>
+  <rect x="92" y="156" width="48" height="4" rx="2" fill="#6C6CA0" opacity="0.4"/>
+  <rect x="92" y="168" width="68" height="4" rx="2" fill="#6C6CA0" opacity="0.4"/>
+
+  <!-- Selection highlight over lines 120-144 -->
+  <rect x="64" y="117" width="108" height="34" rx="4" fill="#A0A0FF" opacity="0.12"/>
+
+  <!-- Clipboard icon (bottom right) -->
+  <g transform="translate(160, 160)">
+    <rect x="12" y="4" width="48" height="60" rx="6" fill="#282840" stroke="#A0A0FF" stroke-width="2.5"/>
+    <rect x="22" y="0" width="28" height="10" rx="4" fill="#A0A0FF"/>
+    <text x="36" y="34" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#CDD6F4">:42</text>
+    <text x="36" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#6C6CA0">-58</text>
+  </g>
+</svg>
