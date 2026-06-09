@@ -1,6 +1,6 @@
 {
   "name": "whereami",
-  "displayName": "Copy Path:Line",
+  "displayName": "WhereAmI",
   "description": "Copies file path + line number to clipboard. Relative or absolute. Handy for pointing AI agents or teammates at specific lines.",
   "version": "0.1.0",
   "publisher": "isimisi",

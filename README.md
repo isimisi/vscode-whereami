@@ -1,4 +1,4 @@
-# Copy Path:Line
+# WhereAmI
 
 Copies the file path + line number to your clipboard instead of the code itself. Relative or absolute.
 

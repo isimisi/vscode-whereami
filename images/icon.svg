@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
   <defs>
     <!-- Background gradient -->
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2D2D2D"/>
-      <stop offset="100%" stop-color="#1A1A1A"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E2A33"/>
+      <stop offset="100%" stop-color="#141C22"/>
     </linearGradient>
 
     <!-- Glass highlight -->
