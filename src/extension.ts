@@ -33,8 +33,8 @@ async function copyPathLine(mode: 'relative' | 'absolute') {
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
-		vscode.commands.registerCommand('copy-path-line.copyRelative', () => copyPathLine('relative')),
-		vscode.commands.registerCommand('copy-path-line.copyAbsolute', () => copyPathLine('absolute'))
+		vscode.commands.registerCommand('whereami.copyRelative', () => copyPathLine('relative')),
+		vscode.commands.registerCommand('whereami.copyAbsolute', () => copyPathLine('absolute'))
 	);
 }
 

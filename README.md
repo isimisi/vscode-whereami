@@ -13,19 +13,19 @@ Built this because I kept manually typing out file references when talking to AI
 
 ## How to use it
 
-Right-click in the editor and you'll see a **Copy Path:Line** submenu with both options.
+Right-click in the editor and you'll see a **WhereAmI** submenu with both options.
 
 Or hit `Cmd+Shift+P` / `Ctrl+Shift+P` and search for:
 
-- `Copy Relative Path:Line`
-- `Copy Full Path:Line`
+- `WhereAmI: Copy Relative Path`
+- `WhereAmI: Copy Full Path`
 
 ### Shortcuts
 
 | Command | Windows / Linux | macOS |
 |---|---|---|
-| Copy Relative Path:Line | `Ctrl+Shift+L` | `Cmd+Shift+L` |
-| Copy Full Path:Line | `Ctrl+Alt+Shift+L` | `Cmd+Alt+Shift+L` |
+| Copy Relative Path | `Ctrl+Shift+L` | `Cmd+Shift+L` |
+| Copy Full Path | `Ctrl+Alt+Shift+L` | `Cmd+Alt+Shift+L` |
 
 ## Change the shortcuts
 
@@ -35,25 +35,25 @@ Open **Preferences: Open Keyboard Shortcuts (JSON)** and add whatever you prefer
 [
   {
     "key": "ctrl+shift+c",
-    "command": "copy-path-line.copyRelative",
+    "command": "whereami.copyRelative",
     "when": "editorTextFocus"
   },
   {
     "key": "ctrl+alt+c",
-    "command": "copy-path-line.copyAbsolute",
+    "command": "whereami.copyAbsolute",
     "when": "editorTextFocus"
   }
 ]
 ```
 
-You can also do it through the GUI - open **Preferences: Open Keyboard Shortcuts**, search for `copy-path-line`, click the pencil icon.
+You can also do it through the GUI - open **Preferences: Open Keyboard Shortcuts**, search for `whereami`, click the pencil icon.
 
 ### Command IDs
 
 | Command ID | Description |
 |---|---|
-| `copy-path-line.copyRelative` | Workspace-relative path + line number(s) |
-| `copy-path-line.copyAbsolute` | Absolute path + line number(s) |
+| `whereami.copyRelative` | Workspace-relative path + line number(s) |
+| `whereami.copyAbsolute` | Absolute path + line number(s) |
 
 ## Examples
 

@@ -2,18 +2,18 @@
   "name": "whereami",
   "displayName": "WhereAmI",
   "description": "Copies file path + line number to clipboard. Relative or absolute. Handy for pointing AI agents or teammates at specific lines.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "isimisi",
   "license": "MIT",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/isimisi/vscode-copy-path-line"
+    "url": "https://github.com/isimisi/vscode-whereami"
   },
   "bugs": {
-    "url": "https://github.com/isimisi/vscode-copy-path-line/issues"
+    "url": "https://github.com/isimisi/vscode-whereami/issues"
   },
-  "homepage": "https://github.com/isimisi/vscode-copy-path-line#readme",
+  "homepage": "https://github.com/isimisi/vscode-whereami#readme",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -31,7 +31,7 @@
     "file path"
   ],
   "galleryBanner": {
-    "color": "#1E1E2E",
+    "color": "#1A2229",
     "theme": "dark"
   },
   "activationEvents": [],
@@ -39,45 +39,45 @@
   "contributes": {
     "commands": [
       {
-        "command": "copy-path-line.copyRelative",
-        "title": "Copy Relative Path:Line"
+        "command": "whereami.copyRelative",
+        "title": "WhereAmI: Copy Relative Path"
       },
       {
-        "command": "copy-path-line.copyAbsolute",
-        "title": "Copy Full Path:Line"
+        "command": "whereami.copyAbsolute",
+        "title": "WhereAmI: Copy Full Path"
       }
     ],
     "submenus": [
       {
-        "id": "copy-path-line.submenu",
-        "label": "Copy Path:Line"
+        "id": "whereami.submenu",
+        "label": "WhereAmI"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "submenu": "copy-path-line.submenu",
+          "submenu": "whereami.submenu",
           "group": "9_cutcopypaste"
         }
       ],
-      "copy-path-line.submenu": [
+      "whereami.submenu": [
         {
-          "command": "copy-path-line.copyRelative"
+          "command": "whereami.copyRelative"
         },
         {
-          "command": "copy-path-line.copyAbsolute"
+          "command": "whereami.copyAbsolute"
         }
       ]
     },
     "keybindings": [
       {
-        "command": "copy-path-line.copyRelative",
+        "command": "whereami.copyRelative",
         "key": "ctrl+shift+l",
         "mac": "cmd+shift+l",
         "when": "editorTextFocus"
       },
       {
-        "command": "copy-path-line.copyAbsolute",
+        "command": "whereami.copyAbsolute",
         "key": "ctrl+alt+shift+l",
         "mac": "cmd+alt+shift+l",
         "when": "editorTextFocus"
