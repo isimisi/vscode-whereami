@@ -2,7 +2,7 @@
   "name": "whereami",
   "displayName": "WhereAmI",
   "description": "Copies file path + line number to clipboard. Relative or absolute. Handy for pointing AI agents or teammates at specific lines.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "isimisi",
   "license": "MIT",
   "icon": "images/icon.png",
